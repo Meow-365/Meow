@@ -20,7 +20,7 @@
 
 <body>
 
-    <audio id="bgMusic" autoplay loop>
+   <audio id="bgMusic" loop>
   <source src="https://github.com/Meow-365/Meow/raw/refs/heads/master/musicoflove.mp3" type="audio/mpeg">
 </audio>
 
@@ -103,11 +103,11 @@ if (!document.createElement('canvas').getContext) {
     adjustCodePosition();
     $("#code").typewriter();
 
-    // 🎶 Music control: start at 29 seconds
-    const audio = document.getElementById("bgMusic");
-    audio.addEventListener("canplay", () => {
-        audio.currentTime = 29;
-        audio.play();
+   document.getElementById("icon").addEventListener("click", () => {
+  const audio = document.getElementById("bgMusic");
+  audio.currentTime = 29;
+  audio.play();
+});
     });
 }
 </script>
